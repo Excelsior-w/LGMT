@@ -1,268 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
-  <!-- Twitter -->
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+  <title>Human Motion Generation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/oni.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
 
 
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <main id="main-content">
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Language-Guided Human Motion Generation Utilizing Cross-Modal Interaction and Textual Enhancement</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
+              <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="static/images/lichaowu.jpg" target="_blank">Li Chaowu</a><sup>*</sup>,</span>
+                <!-- 暂时隐藏作者信息
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yi-Hsiang Chien</a><sup>*</sup>,</span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
                   </span>
                   </div>
+                -->
 
                   <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
+                    <span class="author-block">DA LIAN University<br>2025</span>
+                    <!-- 暂时隐藏作者信息
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    -->
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
+                         <!-- Arxiv PDF link -->
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -273,7 +86,7 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <!-- Supplementary PDF link 
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -283,8 +96,9 @@
                       <span>Supplementary</span>
                     </a>
                   </span>
+                  -->
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -295,7 +109,7 @@
                   </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
+                <!-- ArXiv abstract Link -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
@@ -314,23 +128,21 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser video
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
       </video>
-      <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+-->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -339,10 +151,9 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Text-driven human motion generation aims to generate natural motion sequences with language descriptions. Existing approaches still struggle to accurately align text semantics with motion sequences, and they also have trouble modeling fine-grained motion details effectively. To overcome these obstacles, we introduce a generative framework that combines local and global textual semantics. The proposed framework first employs the Textual Multi-granularity Interpretation Network and the CLIP model to extract text semantic representations at different granularities, thereby comprehensively capturing semantics from fine-grained lexical levels to coarse-grained global meanings. Subsequently, the Cross-modal Dynamic Transformer is introduced to establish dynamic correlations between local text semantics and motion features. Meanwhile, a global self-attention mechanism combined with a masking strategy is applied to enable the modeling of the relationship between global semantics and motion sequences. Our model demonstrates superior performance on major benchmarks, and the results show substantial performance gains in R-Precision and MM-Dist compared to existing techniques. Our work provides new insights into multimodal semantic modeling and natural motion generation.
+            </p>
         </div>
       </div>
     </div>
@@ -350,37 +161,413 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/t2m.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
 
-<!-- Image carousel -->
+<!-- Image section with SVG -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <!-- 上方标题 -->
+      <h1 class="title is-3">Methodology</h1>
+
+      <!-- SVG 响应式显示 -->
+      <div style="max-width: 100%; display: flex; justify-content: center;">
+        <img src="static/images/主图9-10.drawio.svg"
+             alt="Method Overview"
+             style="width: 80%; height: auto;"/>
+      </div>
+
+      <!-- 下方说明文字 -->
+      <h2 class="content has-text-justified" style="margin-top: 1.5rem;">
+        Illustration of our framework, consisting of (a) the Residual Motion VQ-VAE and (b) the Motion Generation stage. The input text description is processed by the TMIN module and the CLIP model to extract local and global text representations, capturing detailed local semantics and overall contextual information, respectively. The local text representations, along with the masked base-layer motion sequence or the unmasked residual motion sequence, are input to the CrossDyT module for dynamic cross-modal fusion modeling. Finally, the predicted base and residual layers are concatenated and passed through the decoder to generate the complete, semantically consistent human motion sequence.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Mod Section with Title and SVG -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <!-- 左侧模块 -->
+        <div style="flex: 1; text-align: center;">
+          <h1 class="title is-3">TMIN</h1>
+          <img src="static/images/TMIN.drawio.svg"
+               alt="A模块"
+               style="width: 60%; height: auto;" />
+        </div>
+        <!-- 竖直虚线分隔符 -->
+        <div style="width: 2px; height: 220px; border-left: 2px dashed #bbb; margin: 0 2vw;"></div>
+        <!-- 右侧模块 -->
+        <div style="flex: 1; text-align: center;">
+          <h1 class="title is-3">CrossDyT</h1>
+          <img src="static/images/CrossDyT.drawio.svg"
+               alt="B模块"
+               style="width: 60%; height: auto;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experiment Section with Title and SVG -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- 主标题：居中 -->
+      <h1 class="title is-3 has-text-centered">Experiments</h1>
+
+      <!-- 副标题：居左 -->
+      <h2 class="title is-4">Quantitative Results:</h2>
+
+      <!-- 第一个图片容器 -->
+      <div class="image-container" style="margin-top: 1.5rem; text-align: center;">
+        <img src="static/images/human.png"
+             alt="HumanML3D 数据集上的实验结果"
+             style="max-width: 100%; height: auto;" />
+      </div>
+      <!-- 图片说明文字 -->
+      <p class="subtitle is-5 has-text-centered" style="margin-top: 0.75rem;">
+        Performance comparison on the HumanML3D dataset. The symbols ↓, ↑, and → indicate that lower, higher, and real-data-aligned values are ideal. Bold values denote the best results, and underlined values indicate the second-best results.
+      </p>
+
+      <!-- 第二个图片容器 -->
+      <div class="image-container" style="margin-top: 2rem; text-align: center;">
+        <img src="static/images/kit.png"
+             alt="KIT-ML 数据集上的实验结果"
+             style="max-width: 100%; height: auto;" />
+      </div>
+      <!-- 图片说明文字 -->
+      <p class="subtitle is-5 has-text-centered" style="margin-top: 0.75rem;">
+        Quantitative results on the KIT-ML dataset.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Videos -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-4">Qualitative Results:</h2>
+
+    <!-- 分组 1 -->
+    <hr>
+    <h3 class="video-section-label has-text-centered">Comparison with Other Advanced Methods</h3>
+    <hr>
+
+    <div class="container has-text-centered">
+      <p class="prompt-text">
+        <strong>Prompt: </strong>A person lifis each knee towards the opposite elbow.
+      </p>
+    </div>
+    <div class="video-grid">
+      <div class="video-item">
+        <video src="static/videos/ours-1_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered"><span style="color: rgba(13, 13, 227, 0.898);">Ours</span></p>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/momask-1_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">momask</p>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAD-1_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">BAD</p>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAMM-1_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">BAMM</p>
+      </div>
+    </div>
+    
+    <div class="container has-text-centered">
+      <p class="prompt-text">
+        <strong>Prompt: </strong>the man walked forward, spun right on one foot and 
+        walked back to his original position.
+      </p>
+    </div>
+
+    <div class="video-grid">
+      <div class="video-item"><video src="static/videos/ours-2_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered"><span style="color: rgba(13, 13, 227, 0.898);">Ours</span></p>
+      </div>
+      <div class="video-item"><video src="static/videos/momask-2_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">momask</p>
+      </div>
+      <div class="video-item"><video src="static/videos/BAD-2_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">BAD</p>
+      </div>
+      <div class="video-item"><video src="static/videos/BAMM-2_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">BAMM</p>
+      </div>
+    </div>
+    
+    <!-- 分组 2 -->
+    <style>
+      .video-grid {
+        margin-bottom: 30px;
+      }
+    </style>
+
+    <hr>
+    <h3 class="video-section-label has-text-centered">Comparison: Sensitive Control over Fine-Grained Motion.</h3>
+    <hr>
+
+    <div class="container has-text-centered">
+      <p class="prompt-text">
+        <strong>Prompt: </strong>a person walks forward and is picking up his toolbox with his 
+        <span style="color: rgba(13, 13, 227, 0.898);">left(upper)</span>/<span style="color: rgb(197, 8, 8);">right(lower)</span> hand. 
+      </p>
+    </div>
+
+    <div class="video-grid">
+      <div class="video-item"><video src="static/videos/ours-3_rot_mesh.webm" autoplay muted loop controls></video></div>
+      <div class="video-item"><video src="static/videos/momask-3_rot_mesh.webm" autoplay muted loop controls></video></div>
+      <div class="video-item"><video src="static/videos/BAD-3_rot_mesh.webm" autoplay muted loop controls></video></div>
+      <div class="video-item"><video src="static/videos/BAMM-3_rot_mesh.webm" autoplay muted loop controls></video></div>
+    </div>
+
+    <div class="video-grid">
+      <div class="video-item"><video src="static/videos/ours-4_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered"><span style="color: rgba(13, 13, 227, 0.898);">Ours</span></p>
+      </div>
+      <div class="video-item"><video src="static/videos/momask-4_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">momask</p>
+      </div>
+      <div class="video-item"><video src="static/videos/BAD-4_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">BAD</p>
+      </div>
+      <div class="video-item"><video src="static/videos/BAMM-4_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">BAMM</p>
+      </div>
+    </div>
+
+    <!-- <hr>
+    <h3 class="video-section-label has-text-centered">对比 2: 仅有细微单词修改</h3>
+    <hr>
+    <div class="container has-text-centered">
+      <p class="prompt-text">
+        <strong>Prompt: </strong>a person walks forward and is picking up his toolbox with his 
+        <span style="color: rgba(13, 13, 227, 0.898);">left(upper)</span>/<span style="color: rgb(197, 8, 8);">right(lower)</span> hand. 
+      </p>
+    </div>
+    
+    <div class="video-grid">
+      <div class="video-item"><video src="static/videos/ours-3_rot_mesh.webm" autoplay muted loop controls></video></div>
+      <div class="video-item"><video src="static/videos/momask-3_rot_mesh.webm" autoplay muted loop controls></video></div>
+      <div class="video-item"><video src="static/videos/BAD-3_rot_mesh.webm" autoplay muted loop controls></video></div>
+      <div class="video-item"><video src="static/videos/BAMM-3_rot_mesh.webm" autoplay muted loop controls></video></div>
+    </div>
+    
+    <div class="video-grid">
+      <div class="video-item"><video src="static/videos/ours-4_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered"><span style="color: rgba(13, 13, 227, 0.898);">Ours</span></p>
+      </div>
+      <div class="video-item"><video src="static/videos/momask-4_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">momask</p>
+      </div>
+      <div class="video-item"><video src="static/videos/BAD-4_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">BAD</p>
+      </div>
+      <div class="video-item"><video src="static/videos/BAMM-4_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">BAMM</p>
+      </div>
+    </div> -->
+    <!-- <div class="container has-text-centered">
+      <p class="prompt-text">
+        <strong>Prompt: </strong> a person steps forward and leans over; they grab a cup with their 
+        <span style="color: rgba(13, 13, 227, 0.898);">left(upper)</span>/<span style="color: rgb(197, 8, 8);">right(lower)</span> hand and 
+        drink it before putting it down and stepping back to their original position.
+      </p>
+    </div>
+    
+
+    <div class="video-grid">
+      <div class="video-item"><video src="static/videos/ours-5_rot_mesh.webm" autoplay muted loop controls></video></div>
+      <div class="video-item"><video src="static/videos/momask-5_rot_mesh.webm" autoplay muted loop controls></video></div>
+      <div class="video-item"><video src="static/videos/BAD-5_rot_mesh.webm" autoplay muted loop controls></video></div>
+      <div class="video-item"><video src="static/videos/BAMM-5_rot_mesh.webm" autoplay muted loop controls></video></div>
+    </div>
+
+    <div class="video-grid">
+      <div class="video-item"><video src="static/videos/ours-6_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered"><span style="color: rgba(13, 13, 227, 0.898);">Ours</span></p>
+      </div>
+      <div class="video-item"><video src="static/videos/momask-6_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">momask</p>
+      </div>
+      <div class="video-item"><video src="static/videos/BAD-6_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">BAD</p>
+      </div>
+      <div class="video-item"><video src="static/videos/BAMM-6_rot_mesh.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">BAMM</p>
+      </div>
+    </div> -->
+
+    <!-- 分组 3 -->
+    <hr>
+    <h3 class="video-section-label has-text-centered">Visualization of Our Method</h3>
+    <hr>
+
+    <div class="video-grid">
+      <div class="video-item"><video src="static/videos/1.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">A person walks in a circle.</p>
+      </div>
+      <div class="video-item"><video src="static/videos/2.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">The man takes 4 steps backwards.</p>
+      </div>
+      <div class="video-item"><video src="static/videos/3.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">A person walks backwards then crawls forword.</p>
+      </div>
+      <div class="video-item"><video src="static/videos/4.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">A person jumps on the spot and is pushed forward.</p>
+      </div>
+    </div>
+
+    <div class="video-grid">
+      <div class="video-item"><video src="static/videos/5.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">A man slowly walking forward.</p>
+      </div>
+      <div class="video-item"><video src="static/videos/10.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">A person reaching down and picking somthing up.</p>
+      </div>
+      <div class="video-item"><video src="static/videos/7.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">A person walks with a limp, their left leg get injured.</p>
+      </div>
+      <div class="video-item"><video src="static/videos/8.webm" autoplay muted loop controls></video>
+        <p class="video-caption has-text-centered">A person performs a standing back kick.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 
+<section class="section">
+  <div class="container">
+    <h2 class="title is-4">Qualitative Results:</h2>
+
+    <div class="video-grid">
+      
+      <div class="video-item">
+        <video src="static/videos/ours-1.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/momask-1.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAD-1.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAMM-1.mp4" autoplay muted loop controls></video>
+      </div>
+      
+      <div class="video-item">
+        <video src="static/videos/ours-2.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/momask-2.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAD-2.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAMM-2.mp4" autoplay muted loop controls></video>
+      </div>
+      
+      <div class="video-item">
+        <video src="static/videos/ours-3.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/momask-3.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAD-3.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAMM-3.mp4" autoplay muted loop controls></video>
+      </div>
+      
+      <div class="video-item">
+        <video src="static/videos/ours-4.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/momask-4.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAD-4.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAMM-4.mp4" autoplay muted loop controls></video>
+      </div>
+      
+      <div class="video-item">
+        <video src="static/videos/ours-5.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/momask-5.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAD-5.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAMM-5.mp4" autoplay muted loop controls></video>
+      </div>
+      
+      <div class="video-item">
+        <video src="static/videos/ours-6.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/momask-6.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAD-6.mp4" autoplay muted loop controls></video>
+      </div>
+      <div class="video-item">
+        <video src="static/videos/BAMM-6.mp4" autoplay muted loop controls></video>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- Image carousel
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
       </h2>
@@ -389,22 +576,17 @@
 </div>
 </div>
 </section>
-<!-- End image carousel -->
+-->
 
-
-
-
-<!-- Youtube video -->
+<!-- Youtube video
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -412,81 +594,57 @@
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+-->
 
-
-<!-- Video carousel -->
+<!-- Video carousel
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+-->
 
-
-
-
-
-
-<!-- Paper poster -->
+<!-- Paper poster
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <!-- TODO: Replace with your poster PDF -->
       <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
           </iframe>
         
       </div>
     </div>
   </section>
-<!--End paper poster -->
-
-
+-->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
